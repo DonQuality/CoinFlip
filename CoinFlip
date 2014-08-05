@@ -1,21 +1,24 @@
 <script>
-var gameWelcome = alert("Welcome to the coin toss game!");
-var userChoice = prompt("Do you choose HEADS or TAILS?").toUpperCase();
-var coinToss = Math.random();
-if (userChoice === "HEADS") {
-    if (coinToss < 0.5) {
+
+  var gameWelcome = alert("Welcome to the coin toss game!");
+  var userChoice = prompt("Do you choose HEADS or TAILS?").toUpperCase();
+  var coinToss = Math.random();
+
+  if (userChoice === "HEADS") {
+      if (coinToss < 0.5) {
         var result = alert("The coin landed on heads. You Win!");
-    }
-    else {
+      }
+      else {
         var result = alert("The coin landed on tails. You Lose!");
-    }
-}
-else{
-    if (coinToss < 0.5) {
+      }
+  }
+  else{
+      if (coinToss < 0.5) {
         var result = alert("The coin landed on heads. You Lose!");
-    }
-    else {
+      }
+      else {
         var result = alert("The coin landed on tails. You Win!");
-    }
-}
+      }
+  }
+
 </script>
